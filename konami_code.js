@@ -18,6 +18,6 @@ function konami(e) {
   if (index === code.length) {
     alert("Surprise!")
     index = 0
-    document.body.removeEventListener('keydown')
+    document.body.removeEventListener('keydown', konami)
   }
 }
